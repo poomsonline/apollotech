@@ -63,7 +63,7 @@
     .main_menu_area .navbar .navbar-nav {
         display: block;
         text-align: left;
-        background: rgba(0, 0, 0, .7);
+        background:   rgba(233, 236, 239, 0.7);
         max-height: 250px;
         overflow-y: scroll;
     }
