@@ -199,6 +199,7 @@ i:before {
   text-align: center;
   margin: 7px;
   color: #303f4d;
+  font-weight: 500;
 }
 @media (max-width: 1130px) {
   .section-skills {
@@ -230,7 +231,7 @@ i:before {
 }
 @media (max-width: 615px) {
   .banner-tool-list div{
-    font-size:12px;
+    font-size:13px;
     min-width: 130px;
     font-weight: 500;
   }
@@ -287,6 +288,9 @@ i:before {
 @media (max-width: 480px) {
   .banner-heading {
     font-size: 1.5rem;
+  }
+  .banner-tool-list div {
+    font-size: 12px;
   }
 }
 h2 div:hover{
