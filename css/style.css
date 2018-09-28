@@ -200,6 +200,18 @@ i:before {
   margin: 7px;
   color: #303f4d;
   font-weight: 500;
+
+  /* Change in color - on roll over*/
+  -webkit-transition: background-color .6s linear;
+  -moz-transition: background-color .6s linear;
+  -ms-transition: background-color .6s linear;
+  -o-transition: background-color .6s linear;
+  transition: background-color .6s linear;
+}
+
+.banner-tool-list div:hover{
+  background-color: #303f4d;
+  color: #ffffff;
 }
 @media (max-width: 1130px) {
   .section-skills {
@@ -2184,9 +2196,9 @@ h2 div:hover{
   line-height: 50px;
   font-size: 14px;
   color: #51545f;
-  -webkit-transition: all 400ms linear 0s;
-  -o-transition: all 400ms linear 0s;
-  transition: all 400ms linear 0s;
+  /*-webkit-transition: all 400ms linear 0s;*/
+  /*-o-transition: all 400ms linear 0s;*/
+  /*transition: all 400ms linear 0s;*/
 }
 
 .copy_right_area .float-md-right .nav li:last-child {
