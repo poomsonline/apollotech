@@ -118,28 +118,177 @@ i:before {
 
   
 }
+@media (max-width: 1200px){
+  .container {
+    width: 100%;
+    max-width: calc(100% - 40px);
+  }
+}
 
-h2 div {
+.section-skills{ float: right; width: 50%}
+.section-info{ float: left; width: 50%}
+
+.banner-info {
   background-color: #303f4d;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 6px;
   margin: 10px;
   font-weight: 600;
   display: inline-block;
-  width: 185px;
-  height: 136px;
-  font-size: 17px;
-  padding-top: 40px;
-  border: 5px solid #0f9c81;
+  width: calc(50% - 27px);
+  font-size: 15px;
+  border: 2px solid #0f9c81;
   letter-spacing: 3px;
   line-height: 21px;
-  -webkit-transition:  background-color .6s linear;
-  -moz-transition:  background-color .6s linear;
-  -ms-transition:  background-color .6s linear;
-  -o-transition:  background-color .6s linear;
-  transition:  background-color .6s linear;
+  -webkit-transition: background-color .6s linear;
+  -moz-transition: background-color .6s linear;
+  -ms-transition: background-color .6s linear;
+  -o-transition: background-color .6s linear;
+  transition: background-color .6s linear;
+  z-index: 2;
+  position: relative;
 }
 
+.mobile-only{ display: none}
+
+.banner{
+  position: relative;
+  box-shadow: 0px 0px 6px 0px #cbe4e0;
+  margin-bottom: 20px;
+}
+
+.banner separator{
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  margin-top: 33px;
+  margin-bottom: 20px;
+  background-color: #6ac5b2;
+  left: 0px;
+  overflow: hidden;
+  z-index: 0;
+}
+.banner-info .img{
+  float: left;
+  margin-top: 0px;
+  margin-right: 10px;
+  font-size: 1.6em;
+}
+
+.banner-info label{
+  float: left;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  letter-spacing: 0.05em;
+}
+.banner-tool-list{
+  font-size: 15px;
+  list-style: none;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+.banner-tool-list div{
+  display: inline-block;
+
+  min-width: 162px;
+  text-align: left;
+  border-radius: 6px;
+  background-color: #e4e4e4;
+  padding: 0px;
+  text-align: center;
+  margin: 7px;
+  color: #303f4d;
+}
+@media (max-width: 1130px) {
+  .section-skills {
+    float: left;
+    width: 100%
+  }
+  .section-info {
+    float: right;
+    width: 100%
+  }
+  .banner-info label{
+    font-size: 12px;
+  }
+
+
+  .banner-info {
+    width: calc(30% - 0px);
+  }
+}
+@media (max-width: 980px) {
+  .container {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 830px) {
+  .banner-info {
+    width: calc(45% - 0px);
+  }
+}
+@media (max-width: 615px) {
+  .banner-tool-list div{
+    font-size:12px;
+    min-width: 130px;
+    font-weight: 500;
+  }
+
+}
+@media (max-width: 570px) {
+  .header.masthead {
+    padding-bottom: 2rem !important;
+  }
+  .banner-info {
+    width: calc(45% - 0px);
+    font-size: 11px;
+  }
+  .banner-tool-list div{
+    width: calc( 50% - 9px);
+    max-width: calc(50% - 9px);
+    min-width: calc(50% - 20px);
+  }
+  .banner-tool-list div{
+    margin: 5px;
+  }
+  .banner-tool-list div:nth-child(odd){
+    margin-left: 0px;
+  }
+  .banner-tool-list div:nth-child(even){
+    margin-right: 0px;
+  }
+  .banner-tool-list{
+    margin: -5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner-info {
+    width: calc(100% - 20px);
+    font-size: 14px;
+  }
+  .mobile-only{
+    /*display: block;*/
+  }
+  separator{
+    display: none;
+  }
+
+  .banner-info{
+    margin: 0px;
+    margin-top: 5px;
+  }
+
+  .banner separator{
+    margin-top: 27px;
+  }
+}
+@media (max-width: 480px) {
+  .banner-heading {
+    font-size: 1.5rem;
+  }
+}
 h2 div:hover{
  background-color: white;
  color: #303f4d;
@@ -2045,10 +2194,12 @@ h2 div:hover{
 }
 
 .header.masthead {
-  padding-top: calc(6rem + 21px);
+  padding-top: calc(6rem + 0px);
   padding-bottom: 6rem;
- 
 }
+  .header hr {
+    margin-top: 0rem;
+  }
 
 .masthead   .container{
    min-height: 344px;
